@@ -41,7 +41,7 @@
   "pgd_random_start": "uniform[-epsilon,+epsilon], clamped to image and box",
   "pixel_preprocessing": "ToTensor() only; unnormalized [0,1]",
   "platform": "macOS-27.0.1-arm64-arm-64bit-Mach-O",
-  "prior_training_times_provenance": "Chat 02 verified MAIN CHAT HANDOFF, not recomputed in evaluation",
+  "prior_training_times_provenance": "Recorded during training and not recomputed in final evaluation",
   "prior_training_times_seconds": {
     "baseline": 395.72,
     "fgsm_trained": 632.41

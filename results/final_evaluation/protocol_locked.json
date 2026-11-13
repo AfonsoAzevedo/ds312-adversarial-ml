@@ -19,5 +19,7 @@
   "pgd_steps": 20,
   "selection_seed": 20261112,
   "test_size": 10000,
-  "validation_probe_sha256": "b39c25ebf19e1b1b300ffd4e02c02c931f7867e8b178a7906fd426bc05d4b2d4"
+  "validation_probe_sha256": "23247bdc9f846acf05dd0bbca1261d0f781e01bc7626e3dad3e4f9539f8d605c",
+  "original_validation_probe_sha256": "b39c25ebf19e1b1b300ffd4e02c02c931f7867e8b178a7906fd426bc05d4b2d4",
+  "publication_metadata_revision": "Training-time provenance wording standardized after evaluation; measured results and attack settings unchanged"
 }
