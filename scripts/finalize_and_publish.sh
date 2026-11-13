@@ -7,9 +7,9 @@ python -m scripts.verify_frozen_artifacts | tee logs/15_repository_integrity.txt
 python -m scripts.check_checkpoint_loading | tee logs/17_checkpoint_loading.txt
 python -m scripts.check_comment_style
 
-#Use the Ruff formatter and verify that all Python syntax trees are unchanged
+#Run Ruff lint checks without rewriting Python comments
 if ! python -m pip show ruff >/dev/null 2>&1; then
-    echo "Installing Ruff for source formatting and PEP 8 checks"
+    echo "Installing Ruff for PEP 8 lint checks"
     python -m pip install ruff
 fi
 python -m ruff check --select E,F,W --ignore E501 src scripts
