@@ -168,7 +168,7 @@ def evaluate_pgd_monitor(
     device: torch.device,
 ) -> float:
     #Use a fixed validation subset to detect weak PGD robustness
-    #This diagnostic does not replace Chat 03's final evaluation
+    #This monitor does not replace the final held-out evaluation
     model.eval()
     total_correct = torch.zeros((), device=device, dtype=torch.long)
     total_samples = 0

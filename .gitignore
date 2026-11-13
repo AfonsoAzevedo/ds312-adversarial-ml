@@ -32,3 +32,6 @@ logs/*.txt
 .env.*
 *.pem
 *.key
+
+#Exclude temporary review copies
+ds312_final_eval_qa/

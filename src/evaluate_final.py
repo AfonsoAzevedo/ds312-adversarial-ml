@@ -386,7 +386,9 @@ def run_evaluation(stage: str, count: int, batch_size: int, locked=None):
         "prior_training_times_seconds": {
             "baseline": 395.72, "fgsm_trained": 632.41,
         },
-        "prior_training_times_provenance": "Chat 02 verified MAIN CHAT HANDOFF, not recomputed in evaluation",
+        "prior_training_times_provenance": (
+            "Recorded during training and not recomputed in final evaluation"
+        ),
         "linf_pixel_budget_numerators": list(EPSILON_NUMERATORS),
         "pgd_alpha_rule": PGD_ALPHA_RULE,
         "pgd_random_start": "uniform[-epsilon,+epsilon], clamped to image and box",

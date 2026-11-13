@@ -110,9 +110,8 @@ scripts/                  Read-only artifact and coding-style verification
 splits/                   Fixed train/validation and monitoring indices
 checkpoints/              Selected baseline and defended model weights
 logs/                     Training configurations, histories and verification logs
-results/final_evaluation/ Locked protocol, raw results, tables, figures and QA notes
+results/final_evaluation/ Locked protocol, raw results, tables and figures
 requirements.txt          Observed Python dependency versions
-REPOSITORY_AUDIT.md        Repository verification checklist
 ```
 
 Key source entry points: `src/prepare_data.py`, `src/model.py`, `src/data.py`, `src/attacks.py`, `src/train_baseline.py`, `src/train_adversarial.py`, `src/evaluate_final.py`, and `src/plot_final_results.py`.
@@ -142,5 +141,3 @@ python -m compileall -q src scripts
 ```
 
 The Ruff check excludes long-line rule E501 because some recorded scripts retain lines longer than 88 characters. **Do not run `ruff format` on this project:** it inserts spaces after `#` and conflicts with the required Python comment convention. All reported lint and comment checks passed when the repository was published.
-
-Run `bash scripts/finalize_and_publish.sh` only when preparing a Git commit. The helper verifies frozen file hashes, loads checkpoints on CPU without inference, runs lint and comment checks, inspects staged files, and asks permission before publishing. It requires the GitHub CLI (`gh`) authenticated to your GitHub account; it does not retrain models or run the test set.
