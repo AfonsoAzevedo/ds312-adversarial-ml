@@ -1,0 +1,34 @@
+#Local Python environment and generated caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+#macOS and editor artifacts
+.DS_Store
+._*
+.vscode/
+.idea/
+
+#Downloaded CIFAR-10 dataset and temporary packages
+data/
+datasets/
+*.zip
+*.tar.gz
+
+#Keep selected checkpoints; ignore optimizer-state checkpoints
+checkpoints/*
+!checkpoints/baseline_best.pt
+!checkpoints/adversarial_best.pt
+
+#Keep recorded experiment JSON, CSV and figures
+
+#Local command transcripts and private credentials
+logs/*.txt
+.env
+.env.*
+*.pem
+*.key

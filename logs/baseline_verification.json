@@ -1,0 +1,11 @@
+{
+  "verification": "PASSED",
+  "device": "mps",
+  "best_epoch": 29,
+  "last_epoch": 30,
+  "recorded_validation_accuracy_pct": 88.32,
+  "recomputed_validation_accuracy_pct": 88.32,
+  "correct_predictions": 4416,
+  "validation_images": 5000,
+  "test_set_used": false
+}

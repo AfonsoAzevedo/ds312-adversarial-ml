@@ -1,0 +1,71 @@
+{
+  "verification": "PASSED",
+  "checkpoint_epoch": 29,
+  "device": "mps",
+  "dataset": "CIFAR-10 validation only",
+  "batch_size": 128,
+  "clean_batch_loss": 0.357835,
+  "clean_batch_correct": 114,
+  "clean_batch_accuracy_pct": 89.0625,
+  "attack": "Untargeted L-infinity PGD",
+  "epsilon_results": [
+    {
+      "epsilon": 0.0,
+      "step_size": 0.003921569,
+      "steps": 10,
+      "random_start": true,
+      "max_abs_pixel_change": 0.0,
+      "loss": 0.357835,
+      "correct_predictions": 114,
+      "accuracy_pct": 89.0625,
+      "constraints_passed": true
+    },
+    {
+      "epsilon": 0.007843137,
+      "step_size": 0.003921569,
+      "steps": 10,
+      "random_start": true,
+      "max_abs_pixel_change": 0.007843167,
+      "loss": 9.941504,
+      "correct_predictions": 5,
+      "accuracy_pct": 3.9062,
+      "constraints_passed": true
+    },
+    {
+      "epsilon": 0.015686275,
+      "step_size": 0.003921569,
+      "steps": 10,
+      "random_start": true,
+      "max_abs_pixel_change": 0.015686303,
+      "loss": 22.313385,
+      "correct_predictions": 0,
+      "accuracy_pct": 0.0,
+      "constraints_passed": true
+    },
+    {
+      "epsilon": 0.031372549,
+      "step_size": 0.007843137,
+      "steps": 10,
+      "random_start": true,
+      "max_abs_pixel_change": 0.031372577,
+      "loss": 38.184006,
+      "correct_predictions": 0,
+      "accuracy_pct": 0.0,
+      "constraints_passed": true
+    }
+  ],
+  "synthetic_numerical_behavior": {
+    "projected_boundary_reached": true,
+    "one_step_matches_fgsm": true,
+    "clean_loss": 0.324178,
+    "adversarial_loss": 0.32837
+  },
+  "one_step_matches_fgsm": true,
+  "seeded_random_start_reproducible": true,
+  "pixel_bounds_and_epsilon_budgets": "PASSED",
+  "model_weights_and_buffers_unchanged": true,
+  "model_parameter_gradients_unchanged": true,
+  "training_and_evaluation_modes_preserved": true,
+  "invalid_input_rejection": "PASSED",
+  "test_set_used": false
+}

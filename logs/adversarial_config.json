@@ -1,0 +1,41 @@
+{
+  "experiment": "fgsm_random_start_adversarial_training",
+  "dataset": "CIFAR-10",
+  "model": "CompactCNN",
+  "trainable_parameters": 288746,
+  "seed": 42,
+  "device": "mps",
+  "training_images": 45000,
+  "validation_images": 5000,
+  "test_set_used": false,
+  "batch_size": 128,
+  "epochs": 30,
+  "optimizer": "AdamW",
+  "learning_rate": 0.001,
+  "weight_decay": 0.0001,
+  "scheduler": "CosineAnnealingLR",
+  "loss_function": "CrossEntropyLoss",
+  "training_augmentation": [
+    "RandomCrop(32, padding=4)",
+    "RandomHorizontalFlip()"
+  ],
+  "validation_transform": "ToTensor()",
+  "pixel_range": [
+    0.0,
+    1.0
+  ],
+  "training_attack": "random_start_FGSM_one_step_projected",
+  "training_epsilon": 0.03137254901960784,
+  "training_step_size": 0.0392156862745098,
+  "training_attack_steps": 1,
+  "training_random_start": true,
+  "monitor_source": "fixed stratified validation subset",
+  "monitor_images": 500,
+  "monitor_images_per_class": 50,
+  "monitor_epsilon": 0.03137254901960784,
+  "monitor_step_size": 0.00784313725490196,
+  "monitor_pgd_steps": 10,
+  "monitor_random_start": false,
+  "checkpoint_selection": "highest validation monitor PGD accuracy, then clean validation accuracy",
+  "torch_version": "2.11.0"
+}

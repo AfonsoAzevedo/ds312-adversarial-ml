@@ -1,0 +1,59 @@
+{
+  "verification": "PASSED",
+  "checkpoint_epoch": 29,
+  "device": "mps",
+  "dataset": "CIFAR-10 validation only",
+  "batch_size": 128,
+  "clean_batch_loss": 0.357835,
+  "clean_batch_correct": 114,
+  "clean_batch_accuracy_pct": 89.0625,
+  "epsilon_results": [
+    {
+      "epsilon": 0.0,
+      "max_abs_pixel_change": 0.0,
+      "loss": 0.357835,
+      "correct_predictions": 114,
+      "accuracy_pct": 89.0625,
+      "constraints_passed": true
+    },
+    {
+      "epsilon": 0.007843137,
+      "max_abs_pixel_change": 0.007843167,
+      "loss": 5.61304,
+      "correct_predictions": 19,
+      "accuracy_pct": 14.8438,
+      "constraints_passed": true
+    },
+    {
+      "epsilon": 0.015686275,
+      "max_abs_pixel_change": 0.015686303,
+      "loss": 9.39585,
+      "correct_predictions": 5,
+      "accuracy_pct": 3.9062,
+      "constraints_passed": true
+    },
+    {
+      "epsilon": 0.031372549,
+      "max_abs_pixel_change": 0.031372577,
+      "loss": 10.308395,
+      "correct_predictions": 3,
+      "accuracy_pct": 2.3438,
+      "constraints_passed": true
+    }
+  ],
+  "independent_gradient_formula": "PASSED",
+  "synthetic_numerical_gradient": {
+    "expected_gradient_sign_passed": true,
+    "analytical_gradient": -0.0110751278,
+    "finite_difference_gradient": -0.0110751278,
+    "absolute_gradient_error": 3.1635718350520037e-12,
+    "clean_loss": 0.324178,
+    "adversarial_loss": 0.32837
+  },
+  "pixel_bounds_and_epsilon_budgets": "PASSED",
+  "model_weights_and_buffers_unchanged": true,
+  "model_parameter_gradients_unchanged": true,
+  "training_and_evaluation_modes_preserved": true,
+  "invalid_input_rejection": "PASSED",
+  "test_set_used": false
+}

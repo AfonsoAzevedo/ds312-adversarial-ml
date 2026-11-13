@@ -1,0 +1,6 @@
+#Versions observed in the verified Apple M2 Python 3.14.4 environment
+numpy==2.5.4
+scikit-learn==1.9.1
+matplotlib==3.11.2
+torch==2.11.0
+torchvision==0.26.0

@@ -1,0 +1,17 @@
+{
+  "device": "mps",
+  "random_seed": 42,
+  "model": "CompactCNN",
+  "parameters": 288746,
+  "training_images": 45000,
+  "batch_size": 128,
+  "warmup_batches": 5,
+  "measured_batches": 25,
+  "measured_images": 3200,
+  "elapsed_seconds": 0.904,
+  "images_per_second": 3541.6,
+  "estimated_epoch_seconds": 12.71,
+  "last_training_loss": 1.7046,
+  "mps_allocated_memory_mb": 4.61,
+  "mps_driver_memory_mb": 1107.44
+}

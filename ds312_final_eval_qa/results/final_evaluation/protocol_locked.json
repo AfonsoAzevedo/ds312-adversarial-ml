@@ -1,0 +1,23 @@
+{
+  "alpha_rule": "max(epsilon/4, 1/255)",
+  "batch_size": 64,
+  "checkpoint_sha256": {
+    "baseline": "e6967650f06f5154626273a3f717a0bca7a1d3a6a60e2568eff6d7fc26b045b7",
+    "fgsm_trained": "069bf0e491b2d7d599dd732cb3402e106e944b3e03871a01df5bb11fcc56406a"
+  },
+  "decision_rationale": "Validation on 500 stratified images showed identical accuracy for PGD20-r2 and PGD40-r2 at all budgets. PGD20-r2 was approximately twice as fast. Full CIFAR-10 test evaluation is computationally feasible.",
+  "development_only": false,
+  "diagnostics_reviewed": true,
+  "epsilon_numerators": [
+    0,
+    2,
+    4,
+    8
+  ],
+  "locked_at_utc": "2026-11-13T03:13:48.919286+00:00",
+  "pgd_restarts": 2,
+  "pgd_steps": 20,
+  "selection_seed": 20261112,
+  "test_size": 10000,
+  "validation_probe_sha256": "b39c25ebf19e1b1b300ffd4e02c02c931f7867e8b178a7906fd426bc05d4b2d4"
+}

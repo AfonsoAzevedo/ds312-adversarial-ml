@@ -1,0 +1,5 @@
+epsilon_over_255,n,baseline_clean_accuracy_pct,fgsm_trained_clean_accuracy_pct,baseline_fgsm_robust_pct,fgsm_trained_fgsm_robust_pct,baseline_pgd_robust_pct,fgsm_trained_pgd_robust_pct
+0,10000,87.76,70.03,,,,
+2,10000,,,14.51,62.93,2.82,62.62
+4,10000,,,3.74,55.05,0.0,53.77
+8,10000,,,2.02,39.43,0.0,33.96

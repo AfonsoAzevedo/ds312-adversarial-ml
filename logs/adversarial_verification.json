@@ -1,0 +1,30 @@
+{
+  "verification": "PASSED",
+  "device": "mps",
+  "best_epoch": 26,
+  "last_epoch": 30,
+  "clean_val_correct": 3505,
+  "clean_val_images": 5000,
+  "clean_val_accuracy_pct": 70.1,
+  "pgd_monitor_correct": 182,
+  "pgd_monitor_images": 500,
+  "pgd_monitor_accuracy_pct": 36.4,
+  "monitor_epsilon": 0.03137254901960784,
+  "monitor_step_size": 0.00784313725490196,
+  "monitor_steps": 10,
+  "monitor_random_start": false,
+  "monitor_class_counts": [
+    50,
+    50,
+    50,
+    50,
+    50,
+    50,
+    50,
+    50,
+    50,
+    50
+  ],
+  "checkpoint_matches_history": true,
+  "test_set_used": false
+}

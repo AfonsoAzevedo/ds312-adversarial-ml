@@ -1,0 +1,66 @@
+{
+  "dataset": "CIFAR-10",
+  "random_seed": 42,
+  "image_shape": [
+    32,
+    32,
+    3
+  ],
+  "pixel_range_original": [
+    0,
+    255
+  ],
+  "num_classes": 10,
+  "class_names": [
+    "airplane",
+    "automobile",
+    "bird",
+    "cat",
+    "deer",
+    "dog",
+    "frog",
+    "horse",
+    "ship",
+    "truck"
+  ],
+  "original_train_size": 50000,
+  "training_size": 45000,
+  "validation_size": 5000,
+  "test_size": 10000,
+  "training_distribution": {
+    "airplane": 4500,
+    "automobile": 4500,
+    "bird": 4500,
+    "cat": 4500,
+    "deer": 4500,
+    "dog": 4500,
+    "frog": 4500,
+    "horse": 4500,
+    "ship": 4500,
+    "truck": 4500
+  },
+  "validation_distribution": {
+    "airplane": 500,
+    "automobile": 500,
+    "bird": 500,
+    "cat": 500,
+    "deer": 500,
+    "dog": 500,
+    "frog": 500,
+    "horse": 500,
+    "ship": 500,
+    "truck": 500
+  },
+  "test_distribution": {
+    "airplane": 1000,
+    "automobile": 1000,
+    "bird": 1000,
+    "cat": 1000,
+    "deer": 1000,
+    "dog": 1000,
+    "frog": 1000,
+    "horse": 1000,
+    "ship": 1000,
+    "truck": 1000
+  }
+}

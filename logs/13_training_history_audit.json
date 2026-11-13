@@ -1,0 +1,16 @@
+{
+  "audit": "PASSED",
+  "epochs_verified": 30,
+  "checkpoint_selection_rule_verified": true,
+  "best_epoch": 26,
+  "best_pgd_monitor_accuracy_pct": 36.4,
+  "clean_accuracy_at_best_epoch_pct": 70.1,
+  "final_epoch_pgd_accuracy_pct": 35.8,
+  "first_epoch_pgd_accuracy_pct": 25.0,
+  "last_10_epochs_pgd_min_pct": 34.6,
+  "last_10_epochs_pgd_max_pct": 36.4,
+  "largest_single_epoch_pgd_drop_points": -2.8,
+  "total_training_seconds": 632.407,
+  "config_and_checkpoints_consistent": true,
+  "test_set_used": false
+}
