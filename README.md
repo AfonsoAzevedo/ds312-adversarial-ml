@@ -132,13 +132,15 @@ The instructor requires an IEEE conference-style PDF report (4–6 pages excludi
 
 ## Optional source-quality checks and GitHub publication
 
-For a read-only source formatting audit (after installing Ruff):
+For read-only lint and comment-style checks (after installing Ruff):
 
 ```bash
 python -m pip install ruff
 python -m ruff check --select E,F,W --ignore E501 src scripts
-python -m ruff format --check src scripts
 python -m scripts.check_comment_style
+python -m compileall -q src scripts
 ```
 
-Run `bash scripts/finalize_and_publish.sh` to verify frozen file hashes and checkpoint loading, perform AST-preserving source formatting, audit staged files, and request confirmation before publishing a **public** GitHub repository. This helper requires the GitHub CLI (`gh`) authenticated to your GitHub account; its checks do not retrain models or run the test set.
+The Ruff check excludes long-line rule E501 because some recorded scripts retain lines longer than 88 characters. **Do not run `ruff format` on this project:** it inserts spaces after `#` and conflicts with the required Python comment convention. All reported lint and comment checks passed when the repository was published.
+
+Run `bash scripts/finalize_and_publish.sh` only when preparing a Git commit. The helper verifies frozen file hashes, loads checkpoints on CPU without inference, runs lint and comment checks, inspects staged files, and asks permission before publishing. It requires the GitHub CLI (`gh`) authenticated to your GitHub account; it does not retrain models or run the test set.
